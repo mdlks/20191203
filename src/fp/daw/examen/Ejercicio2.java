@@ -1,5 +1,7 @@
 package fp.daw.examen;
 
+import java.util.Scanner;
+
 public class Ejercicio2 {
 
 	/*
@@ -18,7 +20,35 @@ public class Ejercicio2 {
 	 * Sólo se permite el uso de recursos del lenguaje Java vistos en las unidades 2 y 3.
 	 */
 	
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("dime un numero: ");
+		int num1 = sc.nextInt();
+		System.out.println("dime otro numero");
+		int num2 = sc.nextInt();
+		int i;
+		int suma=0;
+		
+		if (num1>num2)
+		{
+			for ( i =num2+1; i<num1;i++)
+				if (i %2!=0)
+				{
+					suma = suma +i;
+				}
+		}
+		if (num1<num2)
+		{
+			for (i=num1+1;i<num2;i++)
+				if (i %2 !=0)
+				{
+					suma = suma +i;
+				}
+		}
+		System.out.println(num1);
+		System.out.println(num2);
+		System.out.println("la suma de los impares es: "+ suma);
 		
 	}
 

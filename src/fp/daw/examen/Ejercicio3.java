@@ -1,5 +1,7 @@
 package fp.daw.examen;
 
+import java.util.Scanner;
+
 public class Ejercicio3 {
 
 	/* 3 puntos
@@ -14,6 +16,25 @@ public class Ejercicio3 {
 	
 	public static void main(String[] args) {
 		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("dime un numero: ");
+		int numero = sc.nextInt();
+		
+		
+		for (int i = 0; i< numero; i++)
+		{
+			if (numero == i+ (i+1))
+			{
+				System.out.println("es guay");
+			}
+			else  System.out.println("no es guay");
+			
+			if (numero == i+ (i+1)+(i+2))
+			{
+				System.out.println("es guay");
+			}
+			else System.out.println("no es guay");
+		}
 	}
 
 }
